@@ -38,8 +38,8 @@ A robust Spring Boot application providing secure banking operations with JWT au
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd banking-app
+git clone https://github.com/Ghost-8D/springboot-banking-app.git
+cd springboot-banking-app
 ```
 
 ### 2. Database Setup
@@ -232,23 +232,6 @@ The application includes:
 - **SQL Injection Protection** - JPA prevents SQL injection
 - **Exception Handling** - No sensitive data exposure
 
-## Deployment
-
-### Docker (Optional)
-```dockerfile
-FROM openjdk:17-jdk-slim
-COPY target/banking-app-*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app.jar"]
-```
-
-### Environment Variables
-```bash
-export SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/banking_app
-export SPRING_DATASOURCE_USERNAME=postgres
-export SPRING_DATASOURCE_PASSWORD=your_password
-export JWT_SECRET=your_jwt_secret_key
-```
 
 ## Contributing
 
